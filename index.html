@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percobaan larutan elektrolit dan non elektrolit</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Percobaan larutan elektrolit dan non elektrolit</h1><br>
+        <div class="experiment-area">
+            <div class="beaker-section">
+                <div class="experiment-setup" id="experiment-setup">
+                    <!-- Efek cahaya -->
+                    <div class="light-glow" id="lightGlow"></div>
+                    
+                    <div class="battery">
+                        <div class="plus">+</div>
+                        <div class="minus">−</div>
+                    </div>
+                    
+                    <!-- Lampu di kiri atas -->
+                    <div class="light-right" id="lightLeft">
+                        <div class="bulb-right" id="bulbright">
+                            <div class="filament-left"></div>
+                        </div>
+                    </div>
+                    <!-- besi kiri -->
+                    <!-- Kabel dari baterai ke besi kiri (vertikal) -->
+                    <div class="wire wire-battery-to-left-vertical"></div>
+                    <!-- Kabel dari baterai ke besi kiri (horizontal) -->
+                    <div class="wire wire-battery-to-left-horizontal"></div>
+                    
+                    <!-- besi kanan -->
+                    <!-- Kabel dari besi kanan ke lampu -->
+                    <div class="wire wire-right-to-lamp"></div>
+                    
+                    <!-- Kabel dari lampu ke baterai -->
+                    <div class="wire wire-lamp-to-battery"></div>
+                
+                    <!-- Batang besi elektroda -->
+                    <div class="electrode electrode-left"></div>
+                    <div class="electrode electrode-right"></div>
+                    
+                    <!-- Gelas kimia -->
+                    <div class="beaker">
+                        <!-- Konten larutan -->
+                        <div class="beaker-content" id="beakerContent">
+                        </div>
+                        
+                        <!-- Kaca gelas -->
+                        <div class="beaker-glass"></div>
+                    </div>
+
+                    <div class="chemical-equation hidden" id="electrolyte-result">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="control-panel">
+                <h2>Daftar Larutan</h2>               
+                <div class="controls">
+                    <div class="control-group">
+                        <div class="solution-list">
+                            <div class="solution-item" data-solution="urea">
+                                <span class="solution-name">Larutan Urea</span>
+                                <i class="solution-icon fas fa-flask"></i>
+                            </div>
+                            <div class="solution-item" data-solution="amonia">
+                                <span class="solution-name">Larutan Amonia</span>
+                                <i class="solution-icon fas fa-flask"></i>
+                            </div>
+                            <div class="solution-item" data-solution="hcl">
+                                <span class="solution-name">Larutan HCl</span>
+                                <i class="solution-icon fas fa-flask"></i>
+                            </div>
+                            <div class="solution-item" data-solution="cuka">
+                                <span class="solution-name">Larutan Cuka</span>
+                                <i class="solution-icon fas fa-flask"></i>
+                            </div>
+                            <div class="solution-item" data-solution="glukosa">
+                                <span class="solution-name">Larutan Glukosa</span>
+                                <i class="solution-icon fas fa-flask"></i>
+                            </div>
+                            <div class="solution-item" data-solution="NaCl">
+                                <span class="solution-name">Larutan NaCl</span>
+                                <i class="solution-icon fas fa-flask"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="status-indicators">
+                        <h2>Status</h2>
+                        <div class="status-item" id="lightStatusItem">
+                            <span class="status-label">Lampu:</span>
+                            <span class="status-value off" id="lightStatus">MATI</span>
+                        </div>
+                        <div class="status-item" id="bubbleStatusItem">
+                            <span class="status-label">Gelembung:</span>
+                            <span class="status-value off" id="bubbleStatus">TIDAK ADA</span>
+                        </div>
+                    </div>
+                    
+                    <div class="experiment-controls">
+                        <button class="exp-button" id="startExperiment">
+                            <i class="fas fa-play"></i>
+                            <span>Mulai Percobaan</span>
+                        </button>
+                        <button class="exp-button" id="stopExperiment">
+                            <i class="fas fa-stop"></i>
+                            <span>Berhenti</span>
+                        </button>
+                    </div>
+                    <script src="index.js"></script>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>
